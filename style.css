@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ @keyframes sample {
+    from{left: -100%;}
+    to{left: 0%;}
+ }
+
+ .hero-image {
+    animation: sample 2s ease-in alternate;
+    position: relative;
+ }
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+}
+
+nav ul li a {
+    border-bottom: 1px solid transparent;
+    padding-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid orange;
+    transition: 0.3s ease-in-out;
+
+}
+
+.home-container {
+    padding: 50px 0px;
+    background-color: #003d62;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+
+    border-radius: 45%;
+    overflow: hidden;
+}
+
+
+
+.contant {
+    padding-top: 250px;
+    color: #fff;
+}
+
+.contant h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.contant h1 span {
+    font-size: 60px;
+}
+
+.home-container span.yellow {
+    color: #fdff9f;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* PROJECT SECTION */
+
+
+.project-container {
+    background-color: #003251;
+}
+
+.project-container h2 {
+    text-align: center;
+    padding-top: 90px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-container {
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.card-cont {
+    transition: 0.3s ease-in;
+}
+
+
+.card-cont:hover.card-contant h3 {
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.card-image {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+}
+
+
+.card-image img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+    opacity: 0.6;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-contant {
+    position: relative;
+    bottom: 45px;
+
+}
+
+.card-contant h3 {
+    font-family: 'inter';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: transparent;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.card-contant h3:hover {
+    background-color: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+/* CONTACT-SECTIOIN */
+
+.contact-container {
+    background-color: #003d62;
+    color: #fff;
+    padding: 150px 0px;
+}
+
+.contact-container h2 {
+
+    font-size: 70px;
+    font-family: 'inter';
+    font-weight: bold;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.link a {
+    padding-left: 47px;
+    font-family: 'inter';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 29px;
+    border-bottom: 1px solid transparent;
+    padding: 5px;
+
+}
+
+.link a:hover {
+    border-bottom: 1px solid orange;
+    color: #222;
+}
+
+/* FOOTER-SECTION */
+
+.footer-container {
+    background-color: #012941;
+    color: #fff;
+}
+
+.footer-container p {
+    padding: 45px 0px;
+    font-family: 'inter';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:800px) {
+    .contant {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .contant h1 {
+        font-size: 15px;
+    }
+    .contant  h1 span {
+        font-size: 30px;
+    }
+    .contant h2 {
+        font-size: 30px;
+    }
+    .project-container h2 {
+        font-size: 40px;
+        padding-bottom: 90px;
+    }
+    .card-container {
+        padding-top: 0px;
+    }
+    .card-contant h3 {
+        font-size: 20px;
+    }
+    .contact-container h2 {
+        font-size: 40px;
+    }
+    .link {
+        padding-top: 30px;
+    }
+    .link a {
+        font-size: 20px;
+    }
+    .footer-container p {
+        font-size: 20px;
+    }
+}
+/* 
+@media screen and (min-width:1000px) {
+    .contant {
+        padding-top: 90px;
+    }
+    .contant h1 {
+        font-size: 30px;
+    }
+    .contant  h1 span {
+        font-size: 60px;
+    }
+    .contant h2 {
+        font-size: 60px;
+    }
+    .project-container h2 {
+        font-size: 50px;
+    }
+    
+    .contact-container h2 {
+        font-size: 40px;
+    }
+    .link {
+        padding-top: 30px;
+    }
+    .link a {
+        font-size: 20px;
+    }
+    .footer-container p {
+        font-size: 20px;
+    }
+} */
